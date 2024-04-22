@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      {
+        // array loop
+        array = ["Rifai", "Abdurrohman", "Dzulkarnain", "S. Kom"];
+
+        // anonymous func
+        array.forEach(function (value, index) {
+          console.info(`${index} : ${value}`);
+        });
+
+        // arrow func
+        array.forEach((value, index) => console.info(`${index} : ${value}`));
+
+        array.forEach((value) => console.info(value));
+      }
+    </script>
+  </body>
+</html>
