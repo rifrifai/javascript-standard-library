@@ -52,6 +52,17 @@
         console.info(country.pop());
         console.info(country.pop());
       }
+
+      {
+        // ARRAY SEARCH/ pencarian
+        const cari = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
+
+        console.info(cari.find((value) => value > 5)); //6
+        console.info(cari.findIndex((value) => value > 1)); //1
+        console.info(cari.includes(7)); //cek apakah data exist?
+        console.info(cari.indexOf(5)); //cek di index berapa
+        console.info(cari.lastIndexOf(6)); //cek di index berapa
+      }
     </script>
   </body>
 </html>
