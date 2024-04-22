@@ -75,6 +75,29 @@
         console.info(ganjil);
         console.info(genap);
       }
+
+      {
+        // ARRAY TRANSFORM
+        const angka = [10, 10];
+        const names = "Rifai Abdurrohman Al-Ghazali".split(" ");
+        const namesUpper = names.map((value) => value.toUpperCase());
+
+        // reduce itu untuk mentotal
+        const namesReduce = names.reduce(
+          (before, value) => before + " " + value
+        );
+
+        const namesReduceRight = names.reduceRight(
+          (before, value) => before + " " + value
+        );
+
+        const total = angka.reduce((before, value) => before * value);
+
+        console.info(namesUpper);
+        console.info(namesReduce);
+        console.info(namesReduceRight);
+        console.info(total);
+      }
     </script>
   </body>
 </html>
