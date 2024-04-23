@@ -1,0 +1,14 @@
+{
+  "firstName": "Rifai",
+  "middleName": "Abdurrohman",
+  "lastName": "Al-Demak",
+  "address": {
+    "desa": "Jungpasir",
+    "kec": "Demak",
+    "kab": "Demak",
+    "prov": "Jateng",
+    "country": "Indonesia"
+  },
+  "hobbies": ["Coding", "Gaming", "Travelling", "Reading"],
+  "age": 23
+}

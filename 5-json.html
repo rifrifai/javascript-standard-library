@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <script>
+      // membuat json
+      const biodata = {
+        firstName: "Rifai",
+        middleName: "Abdurrohman",
+        lastName: "Al-Demak",
+        address: {
+          desa: "Jungpasir",
+          kec: "Demak",
+          kab: "Demak",
+          prov: "Jateng",
+          country: "Indonesia",
+        },
+        hobbies: ["Coding", "Gaming", "Travelling", "Reading"],
+        age: 23,
+      };
+
+      const json = JSON.stringify(biodata);
+      console.info(json);
+
+      const jsonObject = JSON.parse(json);
+      console.info(jsonObject);
+    </script>
+  </body>
+</html>
