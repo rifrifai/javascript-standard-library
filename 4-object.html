@@ -7,19 +7,39 @@
   </head>
   <body>
     <script>
-      // ntah itu seal atau freeze sama sama tidak bisa ditambah dan dihapus objectnya
-      // kalau seal tetep masih bisa di ubah objectnya tapi tidak bisa dihapus
-      const name = {
-        firstName: "Rifai",
-        lastName: "Abdurrohman",
-      };
+      {
+        // OBJECT FREEZE AND SEAL
 
-      // Object.freeze(name);
-      Object.seal(name);
+        // ntah itu seal atau freeze sama sama tidak bisa ditambah dan dihapus objectnya
+        // kalau seal tetep masih bisa di ubah objectnya tapi tidak bisa dihapus
+        const name = {
+          firstName: "Rifai",
+          lastName: "Abdurrohman",
+        };
 
-      name.firstName = "Ahmad";
-      delete name.lastName;
-      console.info(name);
+        // Object.freeze(name);
+        Object.seal(name);
+
+        name.firstName = "Ahmad";
+        delete name.lastName;
+        console.info(name);
+      }
+
+      {
+        // OBJECT ASSIGN
+        const target = {
+          firstName: "Rifai",
+        };
+
+        const source = {
+          lastName: "Abdurrohman",
+        };
+
+        // kalau di variable nya ada yang sama, maka source akan menimpa target
+        Object.assign(target, source);
+        console.info(target);
+        console.info(source);
+      }
     </script>
   </body>
 </html>
