@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      // ntah itu seal atau freeze sama sama tidak bisa ditambah dan dihapus objectnya
+      // kalau seal tetep masih bisa di ubah objectnya tapi tidak bisa dihapus
+      const name = {
+        firstName: "Rifai",
+        lastName: "Abdurrohman",
+      };
+
+      // Object.freeze(name);
+      Object.seal(name);
+
+      name.firstName = "Ahmad";
+      delete name.lastName;
+      console.info(name);
+    </script>
+  </body>
+</html>
