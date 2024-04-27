@@ -22,6 +22,22 @@
         const date4 = new Date(1713908484612);
         console.info(date4);
       }
+      {
+        // epoch & unix timestamp
+        const date1 = new Date();
+        console.info(date1.getTime());
+
+        const date2 = new Date(2021, 11, 4);
+        console.info(date2.getTime());
+
+        const date3 = new Date(2021, 11, 4, 22, 45, 5, 333);
+        console.info(date3.getTime());
+
+        const date4 = new Date(1713908484612);
+        console.info(date4.getTime());
+
+        console.info(Date.now());
+      }
     </script>
   </body>
 </html>
