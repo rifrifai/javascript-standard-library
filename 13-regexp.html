@@ -28,6 +28,28 @@
         console.info(test);
         console.info(regex.test("tyas"));
       }
+      {
+        // regex modifier
+        const names =
+          "Rifai Abdurrohman\nrifai abdurrohman\nabdurRohman raka\nrifaI muhammad\nMuhammad Ahmad";
+        // harus g(globar) agar tidak infinite loop
+        const regex = /rifai/gi;
+        const regex2 = /^abdurrohman/gim;
+        const regex3 = new RegExp("muhammad", "gi");
+
+        let result;
+        while ((result = regex.exec(names)) !== null) {
+          console.info(result);
+        }
+
+        while ((result = regex2.exec(names)) !== null) {
+          console.info(result);
+        }
+
+        while ((result = regex3.exec(names)) !== null) {
+          console.info(result);
+        }
+      }
     </script>
   </body>
 </html>
