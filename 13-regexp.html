@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegExp</title>
+  </head>
+  <body>
+    <script>
+      {
+        // beberapa cara membuat regex
+        const regex = /rifai/;
+        const regex2 = RegExp("rifai");
+        const regex3 = RegExp(/rifai/);
+      }
+      {
+        // test regex
+        const name = "diah arum marming tyas abdurrohman rifai";
+        const regex = /rifai/;
+
+        // menghasilkan array dan null
+        const result = regex.exec(name);
+        console.info(result);
+        console.info(regex.exec("tyas"));
+
+        // menghasilkan boolean
+        const test = regex.test(name);
+        console.info(test);
+        console.info(regex.test("tyas"));
+      }
+    </script>
+  </body>
+</html>
