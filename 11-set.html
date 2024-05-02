@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set</title>
+  </head>
+  <body>
+    <script>
+      // di set tidak bisa mengisi array yang sama persis
+      const set = new Set();
+
+      set.add("Rifai");
+      set.add("Rifai");
+      set.add("Abdurrohman");
+      set.add("Iskandar");
+      set.add("Diah");
+      set.add("Arum");
+      set.add("Marming");
+      set.add("Diah");
+
+      console.info(set);
+      set.forEach((value) => console.info(value));
+    </script>
+  </body>
+</html>
