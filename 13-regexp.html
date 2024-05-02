@@ -50,6 +50,16 @@
           console.info(result);
         }
       }
+      {
+        // advanced regex
+        const regex = /ed[aiueo]/gi;
+        const names = "Eda Edi edu edo eko Eki Eka";
+
+        let result;
+        while ((result = regex.exec(names)) !== null) {
+          console.info(result);
+        }
+      }
     </script>
   </body>
 </html>
