@@ -60,6 +60,16 @@
           console.info(result);
         }
       }
+      {
+        // array pada regex
+        const name = "kamu eda edi Edo Edu Ede Eki eka Eko eke";
+
+        console.info(name.match(/ed[aiueo]/gi));
+        console.info(name.search(/ed[aiueo]/gi));
+        console.info(name.replace(/ed[aiueo]/i, "Hehe"));
+        console.info(name.replaceAll(/ed[aiueo]/gi, "Hehe"));
+        console.info(name.split(/e/gi));
+      }
     </script>
   </body>
 </html>
