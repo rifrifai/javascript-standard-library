@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
+  <body>
+    <script>
+      const map = new Map();
+      map.set("Name", "Rifai Abdurrohman");
+      map.set("Address", "Indonesia");
+      map.set("University", "Muhammadiyah University");
+
+      console.info(map);
+      console.info(map.get("Name"));
+      console.info(map.get("University"));
+      console.info(map.get("Address"));
+
+      // perulangan menggunakan forof
+      for (const element of map) {
+        console.info(`${element[0]} : ${element[1]}`);
+      }
+
+      // perulangan menggunakan foreach
+      map.forEach((nilai, key) => console.info(`${key} : ${nilai}`));
+    </script>
+  </body>
+</html>
